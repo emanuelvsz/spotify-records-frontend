@@ -167,79 +167,37 @@ main {
 #column-right > #row-two > #row-two-content {
     height: 160px;
     display: flex;
-    flex-direction: row;
+    flex-direction:row; /*lembrar de apagar*/
     background-color: var(--body-items);
     opacity: var(--body-items-opacity);
     border-radius: 10px;
-}
-
-#row-two-content > div {
-    height: 100%;
-}
-
-#content-column-one{
-    width: 10%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    cursor: pointer;
-}
-
-#content-column-two {
-    width: 80%;
-}
-
-#content-column-three {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-#content-column-one > svg {
-    font-size: 35px;
-    fill: white;
-}
-
-#content-column-three > svg {
-    font-size: 35px;
-    fill: white;
+    justify-content: space-between;
 }
 
 #row-two-content {
     overflow-x: hidden;
 }
 
-.carousel-items {
+.carousel-control:first-child{
+    width: 15%;
     display: flex;
-    padding: 15px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.carousel-item{
-    height: 90%;
-    width: calc(100% / 5 - 1%);
-    background-color: red;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-}
-
-.carousel-control {
+    align-items: center;
     cursor: pointer;
 }
 
-.carousel-control svg {
-    width: 35px;
-    height: 35px;
+.carousel-control:last-child{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    align-self: right;
+}
+
+.carousel-control > svg {
+    font-size: 35px;
     fill: white;
 }
 
-#c-artist-logo{
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    background-color:#5F5F5F;
-}

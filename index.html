@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9b0328cbff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...seu-hash..." crossorigin="anonymous" />
     <title>Spotify Records</title>
 </head>
@@ -14,7 +16,7 @@
         <header>
             <section id="sec-left">
                 <div class="logo">
-                    <img src="./utils/image/logo.png" alt="logo">
+                    <img src="./utils/img/header/logo.png" alt="logo">
                 </div>
             </section>
             <section id="sec-right">
@@ -28,7 +30,7 @@
                 </div>
                 <a href="https://www.spotify.com/br-pt/account/overview/">
                     <div class="profile">
-                        <img src="./utils/image/luffy.png" alt="profile">
+                        <img src="./utils/img/header/luffy.png" alt="profile">
                     </div>
                 </a>
             </section>
@@ -44,25 +46,86 @@
                 <div id="row-two">
                     <div class="row-title"><h3>Most listened artists in the month</h3></div>
                     <section id="row-two-content">
-                        <div id="content-column-one" class="carousel-control" onclick="scrollCarousel('left')">
+                        <div id="prev-button" class="carousel-control">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
                         </div>
-                        <div id="content-column-two" class="carousel-items">
-                            <div class="carousel-item">
-                                <div id="c-artist-logo"></div>
+                        <div class="swiper card_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab6761610000e5eb4111c95b5f430c3265c7304b" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Joji</p>
+                                        <p class="real-name">George Kusunoki</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab6761610000e5eb5a00969a4698c3132a15fbb0" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Taylor Swift</p>
+                                        <p class="real-name">Taylor Swift</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab6761610000e5ebd42c6334786bfdea92beeb5d" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Billy Idol</p>
+                                        <p class="real-name">William Albert</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Michael Jackson</p>
+                                        <p class="real-name">Michael Jackson</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab6761610000e5ebc36dd9eb55fb0db4911f25dd" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Bruno Mars</p>
+                                        <p class="real-name">Peter Hernandez</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab6761610000e5ebdea0fc37a1f39060e74c569b" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Wallows</p>
+                                        <p class="real-name">Wallows</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab67616d00001e02dc19611b9218c95a1cdebc9a" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Boy Pablo</p>
+                                        <p class="real-name">Pablo Muñoz</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="https://i.scdn.co/image/ab67616d0000b27326bec4e64ddf93fb26ca37a0" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <p class="artist-name">Phum Viphurit</p>
+                                        <p class="real-name">Viphurit Siritip</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item a">
-                                <button>asasd</button>
-                            </div>
-                            <div class="carousel-item">3</div>
-                            <div class="carousel-item">4</div>
-                            <div class="carousel-item">5</div>
-                            <div class="carousel-item">6</div>
-                            <div class="carousel-item">7</div>
-                            <div class="carousel-item">8</div>
-                            <div class="carousel-item">9</div>
                         </div>
-                        <div id="content-column-three" class="carousel-control" onclick="scrollCarousel('right')">
+                        <div id="next-button" class="carousel-control">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                         </div>
                     </section>
@@ -73,7 +136,23 @@
     <div id="bottom-content">
 
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/carrousel.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            speed: 1000,
+            pagination: {
+                el: ".swipper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: "#next-button",
+                prevEl: "#prev-button",
+            },
+        });
+    </script>
 </body>
 </html>
