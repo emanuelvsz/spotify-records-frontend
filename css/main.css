@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Metrophobic&display=swap');
+
+:root {
+    --header-items-height: 50px;
+    --header-padding: 5%;
+    --body-items: #2E2E2E;
+    --body-items-opacity: .7;
+    --body-items-radius: 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Metrophobic', sans-serif;
+}
+
+body {
+    height: 200vh;
+}
+
+#top-content {
+    height: calc(100% / 2);
+    background: linear-gradient(to bottom, #8A6297, #2c2b2c);
+}
+
+#bottom-content {
+    height: calc(100% / 2);
+    background-color: #2c2b2c;
+}
+
+header {
+    display: flex;
+    height: 20vh;
+    margin-bottom: 3%;
+}
+
+#sec-left {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    align-items: center;
+    padding-left: var(--header-padding);
+}
+
+.logo > img {
+    height: var(--header-items-height);
+}
+
+#sec-right{
+    background-color: transparent;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: right;
+    padding-right: var(--header-padding);
+}
+
+#search {
+    height: calc(var(--header-items-height) - 5px);
+    width: 53%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10%;
+    background-color: transparent;
+    min-width: 200px;
+}
+
+
+#search-button {
+    height: 100%;
+    width: 15%;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+    min-width: 45px;
+}
+
+#search-input{
+    height: 100%;
+    width: 80%;
+    border: none;
+    outline: none;
+    padding-right: 3%;
+    border-radius: 0 50px 50px 0;
+    min-width: 100px;
+}
+
+.fa-search {
+    font-size: 25px;
+    color: #5F5F5F;
+}
+
+.profile {
+    height: var(--header-items-height);
+    width: var(--header-items-height);
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile > img {
+    height: 100%;
+    border-radius: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: var(--header-padding);
+    padding-right: var(--header-padding);
+    justify-content: space-between;
+}
+
+.row-title {
+    font-size: 14px;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#column-left {
+    width: 21%;
+    height: 200px;
+}
+
+#column-right {
+    width: 77%;
+    height: 200px;
+}
+
+#row-one {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#row-two {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#column-left > #row-one > #row-one-content {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-items);
+    opacity: var(--body-items-opacity);
+    border-radius: 10px;
+}
+
+#column-right > #row-two > #row-two-content {
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--body-items);
+    opacity: var(--body-items-opacity);
+    border-radius: 10px;
+}
+
+#row-two-content > div {
+    height: 100%;
+}
+
+#content-column-one{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#content-column-two {
+    width: 80%;
+}
+
+#content-column-three {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#content-column-one > svg {
+    font-size: 35px;
+    fill: white;
+}
+
+#content-column-three > svg {
+    font-size: 35px;
+    fill: white;
+}
+
+#row-two-content {
+    overflow-x: hidden;
+}
+
+.carousel-items {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-item{
+    height: 90%;
+    width: calc(100% / 5 - 1%);
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel-control {
+    cursor: pointer;
+}
+
+.carousel-control svg {
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
+
+#c-artist-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color:#5F5F5F;
+}

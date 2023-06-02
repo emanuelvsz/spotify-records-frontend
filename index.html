@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b0328cbff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...seu-hash..." crossorigin="anonymous" />
+    <title>Spotify Records</title>
+</head>
+<body>
+    <div id="top-content">
+        <header>
+            <section id="sec-left">
+                <div class="logo">
+                    <img src="./utils/image/logo.png" alt="logo">
+                </div>
+            </section>
+            <section id="sec-right">
+                <div id="search">
+                    <button id="search-button">
+                        <span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </button>
+                    <input id="search-input" type="text" placeholder="Search some artist">
+                </div>
+                <a href="https://www.spotify.com/br-pt/account/overview/">
+                    <div class="profile">
+                        <img src="./utils/image/luffy.png" alt="profile">
+                    </div>
+                </a>
+            </section>
+        </header>
+        <main id="main">
+            <section id="column-left">
+                <div id="row-one">
+                    <div class="row-title"><h3>Top albums of the week</h3></div>
+                    <section id="row-one-content"></section>
+                </div>
+            </section>
+            <section id="column-right">
+                <div id="row-two">
+                    <div class="row-title"><h3>Most listened artists in the month</h3></div>
+                    <section id="row-two-content">
+                        <div id="content-column-one" class="carousel-control" onclick="scrollCarousel('left')">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                        </div>
+                        <div id="content-column-two" class="carousel-items">
+                            <div class="carousel-item">
+                                <div id="c-artist-logo"></div>
+                            </div>
+                            <div class="carousel-item a">
+                                <button>asasd</button>
+                            </div>
+                            <div class="carousel-item">3</div>
+                            <div class="carousel-item">4</div>
+                            <div class="carousel-item">5</div>
+                            <div class="carousel-item">6</div>
+                            <div class="carousel-item">7</div>
+                            <div class="carousel-item">8</div>
+                            <div class="carousel-item">9</div>
+                        </div>
+                        <div id="content-column-three" class="carousel-control" onclick="scrollCarousel('right')">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="bottom-content">
+
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/carrousel.js"></script>
+</body>
+</html>
