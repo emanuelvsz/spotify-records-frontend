@@ -1,3 +1,3 @@
 # spotify-records-frontend
 
-Backend: <a href="github.com/emanuelvsz/spotify-records-backend"> click here </a>
+Backend: <a href="https://github.com/emanuelvsz/spotify-records-backend">click here</a>
