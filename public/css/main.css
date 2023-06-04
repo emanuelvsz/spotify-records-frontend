@@ -90,7 +90,6 @@ main {
 }
 
 #row-one {
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -100,15 +99,6 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-#column-left > #row-one > #row-one-content {
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--body-items);
-    opacity: var(--body-items-opacity);
-    border-radius: var(--body-items-radius);
 }
 
 #column-right > #row-two > #row-two-content {
