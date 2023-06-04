@@ -5,7 +5,7 @@
     --header-padding: 5%;
     --body-items: #2E2E2E;
     --body-items-opacity: .7;
-    --body-items-radius: 10px;
+    --body-items-radius: 5px;
 }
 
 a {
@@ -37,6 +37,7 @@ header {
     display: flex;
     height: 20vh;
     margin-bottom: 3%;
+    padding: 0 var(--header-padding) 0 var(--header-padding);
 }
 
 #sec-left {
@@ -45,7 +46,6 @@ header {
     width: 50%;
     background-color: transparent;
     align-items: center;
-    padding-left: var(--header-padding);
 }
 
 .logo > img {
@@ -59,7 +59,6 @@ header {
     width: 50%;
     align-items: center;
     justify-content: right;
-    padding-right: var(--header-padding);
 }
 
 main {
@@ -109,7 +108,7 @@ main {
     flex-direction: column;
     background-color: var(--body-items);
     opacity: var(--body-items-opacity);
-    border-radius: 10px;
+    border-radius: var(--body-items-radius);
 }
 
 #column-right > #row-two > #row-two-content {
@@ -118,7 +117,7 @@ main {
     flex-direction:row; /*lembrar de apagar*/
     background-color: var(--body-items);
     opacity: var(--body-items-opacity);
-    border-radius: 10px;
+    border-radius: var(--body-items-radius);
     align-items: center;
     justify-content: space-between;
 }
@@ -129,3 +128,25 @@ main {
 
 
 
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do fundo da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do preenchimento da barra de rolagem */
+  }
+  
+  /* Navegadores Firefox */
+  /* OBS: Firefox requer um prefixo -moz- */
+  /* Altere as cores conforme necessário */
+  /* OBS: Firefox não suporta a personalização do tamanho da barra de rolagem */
+  /* Apenas a cor da barra e do preenchimento podem ser alteradas */
+  /* A barra de rolagem é um pouco mais estreita por padrão */
+  /* Você pode ajustar a cor para atender às suas preferências */
+  * {
+    scrollbar-color: #888 #f1f1f1;
+  }

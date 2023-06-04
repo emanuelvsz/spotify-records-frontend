@@ -93,17 +93,17 @@
 .clear::before {
     position: absolute;
     content: '';
-    width: 1px;
+    width: 2px;
     height: 15px;
-    background: black;
+    background: #8A6297;
     transform: rotate(45deg);
 }
 
 .clear::after {
     position: absolute;
     content: '';
-    width: 1px;
+    width: 2px;
     height: 15px;
-    background: black;
+    background: #8A6297;
     transform: rotate(315deg);
 }

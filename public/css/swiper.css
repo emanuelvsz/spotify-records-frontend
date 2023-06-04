@@ -1,3 +1,7 @@
+:root {
+  --swiper-items-radius: 7px;
+}
+
 .carousel-control:first-child{
   width: 15%;
   display: flex;
@@ -53,7 +57,7 @@
 .img_box img {
   height: 100%;
   width: 75px;
-  border-radius: 10px;
+  border-radius: var(--swiper-items-radius);
 }
 
 .text_box {
