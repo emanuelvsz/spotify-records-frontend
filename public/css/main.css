@@ -62,21 +62,6 @@ header {
     padding-right: var(--header-padding);
 }
 
-.profile {
-    height: var(--header-items-height);
-    width: var(--header-items-height);
-    border-radius: 50%;
-    background-color: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile > img {
-    height: 100%;
-    border-radius: 100%;
-}
-
 main {
     width: 100%;
     display: flex;
@@ -142,25 +127,5 @@ main {
     overflow-x: hidden;
 }
 
-.carousel-control:first-child{
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
-.carousel-control:last-child{
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    align-self: right;
-}
-
-.carousel-control > svg {
-    font-size: 35px;
-    fill: white;
-}
 

@@ -1,0 +1,14 @@
+.profile {
+    height: var(--header-items-height);
+    width: var(--header-items-height);
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile > img {
+    height: 100%;
+    border-radius: 100%;
+}

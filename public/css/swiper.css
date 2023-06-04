@@ -1,3 +1,25 @@
+.carousel-control:first-child{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carousel-control:last-child{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  align-self: right;
+}
+
+.carousel-control > svg {
+  font-size: 35px;
+  fill: white;
+}
+
 .container-divs {
     height: 100%;
     width: 80%;

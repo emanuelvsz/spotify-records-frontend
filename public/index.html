@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9b0328cbff.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./utils/img/mixed/sp-white-logo.png">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/header/profile.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...seu-hash..." crossorigin="anonymous" />
     <title>Spotify Records</title>
@@ -17,7 +19,7 @@
         <header>
             <section id="sec-left">
                 <div class="logo">
-                    <img src="./utils/img/header/logo.png" alt="logo">
+                    <img src="../public/utils/img/header/logo.png" alt="logo">
                 </div>
             </section>
             <section id="sec-right">
@@ -30,7 +32,7 @@
                 </div>
                 <a href="https://www.spotify.com/br-pt/account/overview/">
                     <div class="profile">
-                        <img src="./utils/img/header/luffy.png" alt="profile">
+                        <img src="../public/utils/img/header/luffy.png" alt="profile">
                     </div>
                 </a>
             </section>
@@ -131,6 +133,7 @@
                     </section>
                 </div>
             </section>
+            <section id="dados-api"></section>
         </main>
     </div>
     <div id="bottom-content">
@@ -138,6 +141,7 @@
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./src/api/artist.js"></script>
     <script src="./js/carousel.js"></script>
     <script type="text/javascript">
         var swiper = new Swiper(".card_slider", {
