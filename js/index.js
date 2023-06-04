@@ -34,3 +34,11 @@ window.addEventListener('resize', function() {
         columnLeft.style.width = '21%';
     }
 });
+
+
+const icon = document.querySelector('.icon');
+const search = document.querySelector('.search');
+
+icon.onclick = function(){
+    search.classList.toggle('active')
+}

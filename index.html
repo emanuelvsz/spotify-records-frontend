@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/9b0328cbff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...seu-hash..." crossorigin="anonymous" />
     <title>Spotify Records</title>
@@ -20,13 +21,12 @@
                 </div>
             </section>
             <section id="sec-right">
-                <div id="search">
-                    <button id="search-button">
-                        <span>
-                            <i class="fa fa-search"></i>
-                        </span>
-                    </button>
-                    <input id="search-input" type="text" placeholder="Search some artist">
+                <div class="search">
+                    <div class="icon"></div>
+                    <div class="input">
+                        <input type="text" placeholder="Seach some artist" id="mysearch">
+                    </div>
+                    <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
                 </div>
                 <a href="https://www.spotify.com/br-pt/account/overview/">
                     <div class="profile">
