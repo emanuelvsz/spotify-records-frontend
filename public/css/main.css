@@ -126,27 +126,24 @@ main {
     overflow-x: hidden;
 }
 
-
-
 ::-webkit-scrollbar {
-    width: 8px; /* Largura da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Cor do fundo da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Cor do preenchimento da barra de rolagem */
-  }
-  
-  /* Navegadores Firefox */
-  /* OBS: Firefox requer um prefixo -moz- */
-  /* Altere as cores conforme necessário */
-  /* OBS: Firefox não suporta a personalização do tamanho da barra de rolagem */
-  /* Apenas a cor da barra e do preenchimento podem ser alteradas */
-  /* A barra de rolagem é um pouco mais estreita por padrão */
-  /* Você pode ajustar a cor para atender às suas preferências */
-  * {
-    scrollbar-color: #888 #f1f1f1;
-  }
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a9a9a9;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #d3d3d3 transparent;
+}
