@@ -24,6 +24,10 @@
   fill: white;
 }
 
+.carousel-control {
+  height: 100%;
+}
+
 .container-divs {
     height: 100%;
     width: 80%;
